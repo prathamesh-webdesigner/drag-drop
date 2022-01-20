@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag-Drop Game</title>
+</head>
+
+<body>
+    <section class="draggable-elements">
+        <i class="fas fa-cat draggable" draggable="true" style="color: red;" id="cat"></i>
+        <i class="fas fa-dog draggable" draggable="true" style="color: rgb(243, 200, 7);" id="dog"></i>
+        <i class="fas fa-dove draggable" draggable="true" style="color: blue;" id="dove"></i>
+        <i class="fas fa-fish draggable" draggable="true" style="color: rgb(119, 236, 9);" id="fish"></i>
+        <i class="fas fa-frog draggable" draggable="true" style="color: rgb(225, 10, 245);" id="frog"></i>
+    </section>
+    <section class="droppable-elements">
+        <div class="droppable" data-draggable-id='frog'><span>Frog</span></div>
+        <div class="droppable" data-draggable-id='dove'><span>Bird</span></div>
+        <div class="droppable" data-draggable-id='cat'><span>Cat</span></div>
+        <div class="droppable" data-draggable-id='fish'><span>Fish</span></div>
+        <div class="droppable" data-draggable-id='dog'><span>Dog</span></div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
